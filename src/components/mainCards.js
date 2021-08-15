@@ -3,10 +3,6 @@ import { Card, ListGroup, ListGroupItem } from "react-bootstrap"
 import "../assets/styles/cardStyle.scss"
 
 function MainCards() {
-  const numbers = [1, 2, 3, 4, 5];
-  const listItems = numbers.map((number) =>
-    <li>{number}</li>
-  );
   return (
     <>
       <div className="center">
