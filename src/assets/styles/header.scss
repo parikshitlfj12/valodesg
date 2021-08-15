@@ -5,7 +5,7 @@
   height: 50px;
   font-weight: 200;
   font-size: 13px;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid rgb(101, 101, 101);
 }
 
 .cont{
@@ -14,7 +14,8 @@
 
 .icon-adjust{
   position: relative;
-  left: -70px;
+  left: -100px;
+  top: -5px;
 }
 
 .svg-style{

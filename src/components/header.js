@@ -4,7 +4,7 @@ import "../assets/styles/header.scss";
 import { HiOutlineClock } from "react-icons/hi";
 import { GiOpenGate, GiAirZigzag } from "react-icons/gi";
 import { FiGithub, FiSlack } from "react-icons/fi";
-import { AiFillSetting } from "react-icons/ai"
+import { AiFillSetting } from "react-icons/ai";
 
 function Header() {
   return (
@@ -13,15 +13,14 @@ function Header() {
         <Container fluid className="cont">
           <Row className="justify-content-xs-between">
             <Col className="icon-adjust">
-              <GiAirZigzag style={{fontSize: "25px"}} />
+              <GiAirZigzag style={{fontSize: "30px"}} />
             </Col>
 
             <Col xs={8}>
               <Row>
                 <Col>
                   <div>
-                    <HiOutlineClock style={{ marginTop: "-2px" }} />{" "}
-                    <small>2/2</small>
+                    <HiOutlineClock style={{ marginTop: "-2px" }} />{" 2/2 "}
                   </div>
                 </Col>
                 <Col>
@@ -36,7 +35,7 @@ function Header() {
                 <Col>
                   <div className="svg-style">
                     <svg height="70">
-                      <path fill="#80C5B3" d="M 0 0 L50 70 L250 70 L300 0 L300 0 Z" />
+                      <path fill="#80C5B3" d="M 0 0 L40 55 L250 55 L290 0 L290 0 Z" />
                     </svg>
                   </div>
                 </Col>
