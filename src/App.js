@@ -1,5 +1,6 @@
 import './App.css';
 import Header from "./components/header";
+import SecondNavBar from './pages/SecondNavBar';
 import ThemeChanger from './components/ThemeChanger';
 import MainCards from './components/mainCards';
 import ThirdSec from './components/ThirdSec';
@@ -9,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
+      <SecondNavBar />
       <ThemeChanger />
       <MainCards />
       <br />

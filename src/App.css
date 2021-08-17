@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 .App {
   text-align: center;
   background-image: url("https://wallpaperaccess.com/full/5784749.png");
@@ -6,6 +8,7 @@
   background-attachment: fixed;
 }
 
-body{
-  background-color: #030209;
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #fff; /* fallback for old browsers */
 }
