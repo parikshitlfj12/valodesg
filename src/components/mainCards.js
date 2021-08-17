@@ -1,26 +1,25 @@
 import React from 'react'
 import { Card, ListGroup, ListGroupItem } from "react-bootstrap"
 import "../assets/styles/cardStyle.scss"
+import image from "../assets/img/Hivemind_Card.jpg"
 
 function MainCards() {
+  var items = [1,2,3,4,5];
+  var list = items.map(item => {
+    return(
+      <div className="card-style">
+        <Card>
+          <Card.Img variant="top" src={image} />
+        </Card>
+      </div>
+    )
+  })
+
   return (
     <>
       <div className="center">
-        <Card style={{ width: '15rem', margin: "auto" }}>
-          <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png" />
-          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the bulk of
-              the card's content.
-            </Card.Text>
-          </Card.Body>
-          <ListGroup className="list-group-flush">
-            <ListGroupItem>Cras justo odio</ListGroupItem>
-            <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-            <ListGroupItem>Vestibulum at eros</ListGroupItem>
-          </ListGroup>
-        </Card>
+        {list}
+        
       </div>
     </>
   )
