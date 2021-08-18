@@ -8,25 +8,27 @@
   background-color: #617493;
   outline: 1px solid rgb(189, 189, 189);
   outline-offset: -4px;
-  padding: 10px;
+  padding: 7px;
   width: 50%;
   margin-top: 5px;
+  font-size: 12px;
+  font-weight: 100;
 }
 
 .inqueue-desg{
-  padding: 10px;
-  width: 70%;
+  padding: 7px;
+  width: 65%;
   background-color: #88D0BC;
   outline: 1px solid rgb(255, 255, 255);
   outline-offset: -4px;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .cancel-desg{
-  font-size: 28px;
+  font-size: 23px;
   position: relative;
-  top: -5px;
-  left: 25%;
+  top: -2px;
+  left: 29%;
   transform: rotate(45deg);
   outline: 1px solid #88D0BC;
   outline-offset: -6px;

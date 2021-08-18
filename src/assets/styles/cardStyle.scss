@@ -1,12 +1,14 @@
 .center{
   margin-top: 50px;
   width: 100%;
-  padding: 0px 50px;
-  color: white;
+  background-color: red;
 }
 
+
+// Hover will expand this entire div
 .card-style{
-  width: 11rem;
+  background-color: red;
+  width: 8rem;
   display: inline-block;
-  margin: 0px 30px;
+  margin: 0px auto;
 }
