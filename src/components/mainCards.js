@@ -19,7 +19,9 @@ function MainCards() {
   return (
     <>
       <div className="center">
-        {list}
+        <div>
+          {list}
+        </div>
       </div>
     </>
   )

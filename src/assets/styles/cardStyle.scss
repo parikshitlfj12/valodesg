@@ -1,14 +1,11 @@
 .center{
   margin-top: 50px;
-  width: 100%;
-  background-color: red;
 }
 
-
-// Hover will expand this entire div
+// Collapse it first
+// Hover div will expand this entire div
+// And Hovering over a particular card will animate it in some way
 .card-style{
-  background-color: red;
-  width: 8rem;
   display: inline-block;
-  margin: 0px auto;
+  margin: auto;
 }
