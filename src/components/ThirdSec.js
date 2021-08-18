@@ -9,18 +9,18 @@ function ThirdSec () {
       <div className="third-section">
         <Container>
           <Row>
-            <Col>
+            <Col xs={4}>
               <div className="practice">
                 PRACTICE
               </div>
             </Col>
-            <Col>
+            <Col xs={4}>
               <div className="inqueue-desg">
                 <span>IN QUEUE</span>
                 <RiAddBoxFill className="cancel-desg" />
               </div>
             </Col>
-            <Col>
+            <Col xs={4}>
               <div className="practice">
                 LEAVE PARTY
               </div>

@@ -13,7 +13,7 @@ function ThemeChanger() {
   return(
     <div className="theme-changer">
       <div className="inner-div">
-        <small style={{fontSize: "13px"}}>CHANGE THEME</small>
+        <span className="change-text">CHANGE THEME</span>
         <div className="icons-style" onClick={changeToggle}>
           {toggleIcon}
         </div>

@@ -6,9 +6,17 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
+  overflow: hidden;
+  /* If necessary */
+  /* padding-right: 50px; */
 }
-
 body {
   font-family: 'Roboto', sans-serif;
   background: #fff;
+  overflow: hidden;
+}
+
+.competitive{
+  color: rgba(255, 255, 255, 0.632);
+  font-size: 11px; 
 }

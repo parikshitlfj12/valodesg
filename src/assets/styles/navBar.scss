@@ -1,6 +1,6 @@
 #navbarSupportedContent {
   border-bottom: 1px solid rgb(113, 113, 113);
-  margin: auto;
+  margin: -5px auto;
   overflow: hidden;
   position: relative;
 }
@@ -27,9 +27,8 @@
   position: relative;
 }
 #navbarSupportedContent > ul > li.active > a {
-  color: #000000;
+  color: white;
   background-color: transparent;
-  font-weight: bold;
   font-size: 13px;
   transition: all 0.7s;
 }

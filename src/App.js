@@ -14,7 +14,7 @@ function App() {
       <ThemeChanger />
       <MainCards />
       <br />
-      <small style={{color:"white", fontSize: "12px", fontWeight:"400"}}>Competitive: Standard VALORANT gameplay. Same rules as unrated, but at a higher stakes mode where you earn and compete for rank.</small>
+      <small className="competitive">Competitive: Standard VALORANT gameplay. Same rules as unrated, but at a higher stakes mode where you earn and compete for rank.</small>
       <ThirdSec />
       <FourthSec />
     </div>
