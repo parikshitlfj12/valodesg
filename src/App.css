@@ -2,23 +2,19 @@
 
 body, html{
   height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background-image: url("https://wallpaperaccess.com/full/5784749.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .App {
   text-align: center;
-  background-image: url("https://wallpaperaccess.com/full/5784749.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-attachment: fixed;
-  overflow: hidden;
-  /* If necessary */
-  /* padding-right: 50px; */
-}
-body {
-  height: 100%;
-  font-family: 'Roboto', sans-serif;
-  background: #fff;
-  overflow: hidden;
 }
 
 .competitive{
