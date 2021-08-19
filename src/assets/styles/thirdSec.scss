@@ -1,35 +1,45 @@
 .third-section{
-  margin-top: 20px;
   color: white;
-  margin-left: 7%;
+  margin: 20px auto 0px auto ;
 }
 
 .practice{
   background-color: #617493;
   outline: 1px solid rgb(189, 189, 189);
-  outline-offset: -4px;
+  outline-offset: -3px;
   padding: 7px;
-  width: 50%;
-  margin-top: 5px;
-  font-size: 12px;
+  width: 45%;
+  font-size: 10px;
   font-weight: 100;
+  margin: 5px auto 0 auto;
 }
 
 .inqueue-desg{
-  padding: 7px;
-  width: 65%;
+  padding: 6px 5px;
+  width: 55%;
   background-color: #88D0BC;
   outline: 1px solid rgb(255, 255, 255);
-  outline-offset: -4px;
-  font-size: 18px;
+  outline-offset: -3px;
+  font-size: 16px;
+  margin: 5px auto 0 auto;
 }
 
 .cancel-desg{
-  font-size: 23px;
+  font-size: 20px;
   position: relative;
   top: -2px;
-  left: 29%;
+  left: 25%;
   transform: rotate(45deg);
   outline: 1px solid #88D0BC;
-  outline-offset: -6px;
+  outline-offset: -4px;
+}
+
+.practice1{
+  position:relative;
+  left:100px;
+}
+
+.practice2{
+  position:relative;
+  right:100px;
 }

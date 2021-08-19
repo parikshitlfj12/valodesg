@@ -17,12 +17,12 @@ function Header() {
     <>
       <div className="header-template">
         <Container fluid className="cont">
-          <Row className="justify-content-xs-between">
-            <Col xs={2} className="icon-adjust">
+          <Row>
+            <Col className="icon-adjust">
               <GiAirZigzag style={{fontSize: "30px"}} />
             </Col>
 
-            <Col xs={8} className="Mid-Section">
+            <Col xs={9} className="Mid-Section">
               <Row>
                 <Col>
                   <div>
@@ -41,7 +41,7 @@ function Header() {
                 <Col>
                   <div className="svg-style">
                     <span className="svg-text">
-                      <span>
+                      <span className="timetext">
                         {dateState.toLocaleString('en-US', {
                             hour: 'numeric',
                             minute: 'numeric',
@@ -96,7 +96,7 @@ function Header() {
               </Row>
             </Col>
 
-            <Col xs={2}>
+            <Col xs={1}>
               <div style={{ textAlign: "right", marginRight: "15px" }}>
                 <AiFillSetting 
                   style={{

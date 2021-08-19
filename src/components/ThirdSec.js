@@ -10,7 +10,7 @@ function ThirdSec () {
         <Container>
           <Row>
             <Col xs={4}>
-              <div className="practice">
+              <div className="practice practice1">
                 PRACTICE
               </div>
             </Col>
@@ -21,7 +21,7 @@ function ThirdSec () {
               </div>
             </Col>
             <Col xs={4}>
-              <div className="practice">
+              <div className="practice practice2">
                 LEAVE PARTY
               </div>
             </Col>
