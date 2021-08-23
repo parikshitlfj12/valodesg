@@ -37,7 +37,7 @@ function Header() {
                 <Link to="/" className="link-style">HOME</Link>
               </Col>
               <Col>
-                <Link to="/about" className="link-style">ABOUT ME</Link>
+                <Link to="/about" className="link-style">ABOUT</Link>
               </Col>
               <Col>
                 <Link to="/projects" className="link-style">PROJECTS</Link>
