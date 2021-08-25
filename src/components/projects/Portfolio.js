@@ -22,15 +22,16 @@ export default function Portfolio() {
           <br/>
         </Col>
         <Col>
-          <small><i>https://reactjs.org/</i></small>
+        
+          <i><a href="https://reactjs.org/" style={{color: "#5E9284"}}>https://reactjs.org/</a></i>
           <br/>
-          <small><i>https://react-bootstrap.github.io/</i></small>
+          <i><a href="https://react-bootstrap.github.io/" style={{color: "#5E9284"}}>https://react-bootstrap.github.io/</a></i>
           <br/>
-          <small><i>https://github.com/pmndrs/react-three-fiber</i></small>
+          <i><a href="https://github.com/pmndrs/react-three-fiber" style={{color: "#5E9284"}}>https://github.com/pmndrs/react-three-fiber</a></i>
           <br/>
-          <small><i>https://github.com/pmndrs/drei</i></small>
+          <i><a href="https://github.com/pmndrs/drei" style={{color: "#5E9284"}}>https://github.com/pmndrs/drei</a></i>
           <br/>
-          <small><i>https://vercel.com/</i></small>
+          <i><a href="https://vercel.com/" style={{color: "#5E9284"}}>https://vercel.com/</a></i>
           <br/>
         </Col>
       </Row>

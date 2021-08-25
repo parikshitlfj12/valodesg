@@ -10,18 +10,6 @@
   transition: all 0.2s ease-in;
 }
 
-.OneProject:hover{
-  box-shadow: 3px 3px 5px 1px black;
-  background-color: rgba(93, 0, 255, 0.030);
-  // font-weight: bold;
-  font-size: 16.5px;
-}
-
-.OneProject:hover img{
-  width: 65vh;
-  height: 45vh;
-}
-
 .projecttext{
   text-align: left;
   margin: auto;

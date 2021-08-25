@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 import "../assets/styles/navBar.scss";
-import {NavLink} from "react-router-dom";
+import {Link} from "react-router-dom";
 import $ from 'jquery';
 import {BrowserRouter as Router, Route, useHistory} from "react-router-dom";
 
@@ -49,11 +49,11 @@ const NavBar = ({navItems}) => {
       return(
         <>
           <li className={"nav-item " + (navItems[0] === item ? 'active' : '')}>
-            <NavLink to={pathname + "/" + item} exact>
+            <Link to={pathname + "/" + item} exact>
               <i 
               className="fas fa-tachometer-alt">
               </i>{item}
-            </NavLink>
+            </Link>
           </li>
         </>
       )
@@ -63,67 +63,13 @@ const NavBar = ({navItems}) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-mainbg">
       <Router>
-        <Route path="/">
           <div id="navbarSupportedContent">
             <ul>
               {/* The white Animation Part */}
               <div className="hori-selector"></div>
-              
               {items}
-
-
-
-
-
-
-
-               {/* <li className="nav-item active">
-                <NavLink to="/" exact>
-                  <i 
-                  className="fas fa-tachometer-alt">
-                  </i>SAMPLE
-                </NavLink>
-              </li> */}
-
-              {/*<li className="nav-item">
-                <NavLink to="/about" exact>
-                  <i 
-                  className="far fa-address-book">
-                  </i>COMPETITIVE
-                </NavLink> 
-              </li>
-
-              <li className="nav-item">
-                <NavLink to="/service" exact>
-                  <i 
-                  className="far fa-clone">
-                  </i>SPIKE RUSH
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink to="/testimonial" exact>
-                  <i 
-                  className="far fa-chart-bar">
-                  </i>DEADTHMATCH
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink to="/contact" exact>
-                  <i 
-                  className="far fa-copy">
-                  </i>REPLICATION
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink to="/contact" exact>
-                  <i 
-                  className="fab fa-flickr">
-                  </i>CUSTOM
-                </NavLink>
-              </li> */}
             </ul>
           </div>
-        </Route>
       </Router>
     </nav>
   )

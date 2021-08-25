@@ -1,0 +1,17 @@
+.experience-div{
+  margin-top: 2%;
+  color: black;
+  padding-bottom: 250px;
+}
+
+.item{
+  border: 2px solid red;
+  transition: all 1s ease-in;
+}
+
+.item:hover{
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  background-color: red;
+}

@@ -40,7 +40,7 @@ function Header() {
                 <Link to="/about" className="link-style">ABOUT</Link>
               </Col>
               <Col>
-                <Link to="/projects" className="link-style">PROJECTS</Link>
+                <Link to="/projects" className="link-style">PROJECT</Link>
               </Col>
               <Col>
                 <div className="svg-style">
@@ -66,9 +66,8 @@ function Header() {
                 <Link to="/experience"  className="link-style">EXPERIENCE</Link>
               </Col>
               <Col>
-                <Link to="/career" className="link-style">CAREER</Link>
               </Col>
-              <Col>
+              <Col style={{position:"relative", left:"-6%"}}>
                 <Link to="/contact" className="link-style">CONTACT</Link>
               </Col>
               <Col>
