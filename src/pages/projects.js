@@ -1,6 +1,6 @@
 import NavBar from "../components/NavBar";
 import ThemeChanger from "../components/ThemeChanger";
-import { Tabs, Tab } from "react-bootstrap";
+import { Route, Switch, useRouteMatch, Redirect } from "react-router-dom";
 
 // Importing Components
 import OneProject from "../components/OneProject";
@@ -10,39 +10,31 @@ import Portfolio from "../components/projects/Portfolio";
 import imagePortfolio from "../assets/img/Screenshot (471).png";
 import WilsWork from "../components/projects/WilsWork";
 import imageWils from "../assets/img/Screenshot (472).png";
-import TradingApp from "../components/projects/TradingApp";
-import imageTradingApp from "../assets/img/Screenshot (479).png";
-import { Switch, BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 
 export default function Projects() {
-  const items = ["Happy Farm", "Portfolio", "WilsWork", "Trading app"];
+  const items = ["HappyFarm", "Portfolio", "WilsWork", "TradingApp", "Apis"];
+
+  const { path } = useRouteMatch();
 
   return (
     <>
       <NavBar navItems={items} />
-      <NavLink to="/projects/Portfolio" className="text-white">Profile</NavLink>
-      {/* <ThemeChanger /> */}
+      <ThemeChanger />
 
-      {/* <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="mb-3">
-        <Tab eventKey="home" title="Home">
-          alksndalks
-        </Tab>
-        <Tab eventKey="profile" title="Profile">
-          2nd
-        </Tab>
-        <Tab eventKey="contact" title="Contact" >
-          3rd
-        </Tab>
-      </Tabs> */}
       <Switch>
-        <Route path="projects/Portfolio" component={ThemeChanger} exact/>
+        <Route exact path={`${path}`}>
+          <Redirect to={`${path}/HappyFarm`} />
+        </Route>
+        <Route path={`${path}/HappyFarm`}>
+          <OneProject Content={HappyFarm} image={imageHappyFarm} />
+        </Route>
+        <Route path={`${path}/Portfolio`}>
+          <OneProject Content={Portfolio} image={imagePortfolio} />
+        </Route>
+        <Route path={`${path}/WilsWork`}>
+          <OneProject Content={WilsWork} image={imageWils} />
+        </Route>
       </Switch>
-
-
-      {/* <OneProject Content={HappyFarm} image={imageHappyFarm}/>
-      <OneProject Content={Portfolio} image={imagePortfolio}/>
-      <OneProject Content={WilsWork} image={imageWils}/>
-      <OneProject Content={TradingApp} image={imageTradingApp}/> */}
     </>
   );
 }
