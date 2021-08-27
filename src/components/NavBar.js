@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import "../assets/styles/navBar.scss";
 import { NavLink, useRouteMatch } from "react-router-dom";
 import $ from "jquery";
-import { BrowserRouter as Router, Route, useHistory } from "react-router-dom";
 
 const NavBar = ({ navItems }) => {
   const selectorNode = $(".hori-selector");
@@ -60,15 +59,14 @@ const NavBar = ({ navItems }) => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-mainbg">
-      <Router>
-          <div id="navbarSupportedContent">
-            <ul>
-              {/* The white Animation Part */}
-              <div className="hori-selector"></div>
-              {items}
-            </ul>
-          </div>
-      </Router>
+      <div id="navbarSupportedContent">
+        <ul>
+          {/* The white Animation Part */}
+          <div className="hori-selector"></div>
+
+          {items}
+        </ul>
+      </div>
     </nav>
   );
 };
